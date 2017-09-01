@@ -47,7 +47,7 @@ Instead of sequential consistency's requirement that the order of *all* operat
 
 ### Eventual Consistency
 
-TODO
+A weak model specifying that in absence of updates to an object, all nodes will converge to the same state and all reads on this object will return the latest written value.
 
 
 ## Multi-object, Multi-operation Models
@@ -57,10 +57,11 @@ These models come from databases background and include a concept of transaction
 
   ### Serializability
 
-TODO
+A guarantee that a result of execution of several transactions' operations could have been produced by executing these transactions one at a time, one after another in some arbitrary order.
 
 
 ### Strict Serializability
-TODO
+
+A version of serializability that additionally guarantees that their execution is as if the transactions' order in real time was preserved.
 
   
