@@ -20,3 +20,9 @@ Strongest model: all writes appear to happen instantenaously at the exact. Any r
 
 ## Linearizability
 This model includes the fact that operations take time: each operation is defined to have a start time when it's invoked, and an end time when it's acknowledged. Linearizability guarantees that each operation appears for all  processes to happen atomically at a single instant sometime between it's invocation and its acknowledgement. This implies that like in sequential consistency, described below, all processes agree on the order of operations and that operations made from one process are seen by other processes in correct program order.
+
+
+## Sequential Consistency
+Sequential consistency drops the requirement that an operation takes effect between its invocation and acknowledgement. Instead a read can "take effect" before its invocation, meaning it is stale, or a write can be queued to take effect after its acknowledgement, meaning that it may not yet be visible at the end of operation. This can be thought of as an asynchronous version of linearizability.
+
+It's still required that all processes (eventually) see  operations performed in a single order in which operations performed by a particular process are not reordered between each other.
