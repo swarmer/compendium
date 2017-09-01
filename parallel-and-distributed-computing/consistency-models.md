@@ -12,7 +12,11 @@ Often a set of parallel processes forms a high level abstraction, such as a data
 
 A **consistency model** is a set of rules that precisely describe allowed results of sequences of operations performed on such distributed system.
 
+
 ## Strict Consistency
 
-Strongest model: all writes appear to happen instantenaously right when they are issued. Any read of a variable must return the value of the most recent write on this variable.
+Strongest model: all writes appear to happen instantenaously at the exact. Any read of a variable must return the value of the most recent write on this variable. It's what you might intuitively want, but this might only hold when you are dealing with a single-threaded system. The reason why this is not possible to implement otherwise is that write operations in real distributed systems *take time*. Physics and the speed of light put a lower bound on how quickly information can propagate from one node to others. In practice networking hardware (or really all hardware along the way) introduces additional significant latency.
 
+
+## Linearizability
+This model includes the fact that operations take time: each operation is defined to have a start time when it's invoked, and an end time when it's acknowledged. Linearizability guarantees that each operation appears for all  processes to happen atomically at a single instant sometime between it's invocation and its acknowledgement. This implies that like in sequential consistency, described below, all processes agree on the order of operations and that operations made from one process are seen by other processes in correct program order.
