@@ -60,7 +60,7 @@ These models come from databases background and include a concept of transaction
 A version of serializability that additionally guarantees that their execution is as if the transactions' order in real time was preserved.
 
 
-  ### Serializability
+### Serializability
 
 A guarantee that a result of execution of several transactions' operations could have been produced by executing these transactions one at a time, one after another in some arbitrary order.
 
