@@ -55,13 +55,28 @@ A weak model specifying that in absence of updates to an object, all nodes will 
 These models come from databases background and include a concept of transaction containing multiple operations on a number of objects.
 
 
+### Strict Serializability
+
+A version of serializability that additionally guarantees that their execution is as if the transactions' order in real time was preserved.
+
+
   ### Serializability
 
 A guarantee that a result of execution of several transactions' operations could have been produced by executing these transactions one at a time, one after another in some arbitrary order.
 
 
-### Strict Serializability
+### Repeatable Read
 
-A version of serializability that additionally guarantees that their execution is as if the transactions' order in real time was preserved.
+After a transaction has read certain rows, on subsequent reads these rows will not be changed, even if another transaction changed them and committed. Phantom reads — reads returning a changed set of rows that satisfy a search confition are allowed according to the SQL standard.
+
+
+### Read Committed
+
+A transaction will never read uncommitted data, but it may re-read data previously read and get changed rows, updated by other recently committed transactions.
+
+
+### Read Uncommitted
+
+A transaction will see all updates, even not yet committed.
 
   
