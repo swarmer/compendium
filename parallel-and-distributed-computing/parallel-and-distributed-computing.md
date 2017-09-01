@@ -1,3 +1,3 @@
 # Parallel and Distributed Computing
 
-TODO
+Notes about parallel and distributed computing.
