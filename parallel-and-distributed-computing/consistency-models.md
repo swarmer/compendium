@@ -1,5 +1,3 @@
 # Consistency Models
 
 TODO
-
-
