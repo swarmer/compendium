@@ -1,3 +1,6 @@
 {
-    "plugins": ["theme-api"]
+    "plugins": [
+        "collapsible-menu",
+        "theme-api"
+    ]
 }
