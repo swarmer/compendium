@@ -1,3 +1,0 @@
-# Lock-free Programming
-
-TODO
