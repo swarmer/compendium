@@ -1,9 +1,8 @@
 # Summary
 
-## Methods
+## Introduction
 
 * [Introduction](README.md)
-* [Defining Methods](methods.md)
 
 ## Parallel and Distributed Computing
 
