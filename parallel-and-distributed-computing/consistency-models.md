@@ -26,7 +26,7 @@ These models only describe rules concerning series of singular ungrouped operati
 Strongest model: all writes appear to happen instantenaously at the exact time they are issued [when they are finished in some sources]. Any read of a variable must return the value of the most recent write on this variable. It's what you might intuitively want, but this might only hold when you are dealing with a single-threaded system. The reason why this is not possible to implement otherwise is that write operations in real distributed systems *take time*. Physics and the speed of light put a lower bound on how quickly information can propagate from one node to others. In practice networking hardware (or really all hardware along the way) introduces additional significant latency.
 
 
-### Linearizability
+### Linearizability (Strong Consistency)
 
 This model includes the fact that operations take time: each operation is defined to have a start time when it's invoked, and an end time when it's acknowledged. Linearizability guarantees that each operation appears for all  processes to happen atomically at a single instant sometime between it's invocation and its acknowledgement. This implies that like in sequential consistency, described below, all processes agree on the order of operations and that operations made from one process are seen by other processes in correct program order. Unlike in strict consistency, operations don't need to be applied in the order of their starting points in time.
 
