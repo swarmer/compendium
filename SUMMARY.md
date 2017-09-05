@@ -5,6 +5,6 @@
   * [Consistency Models](parallel-and-distributed-computing/consistency-models.md)
   * [CAP Theorem](parallel-and-distributed-computing/cap.md)
 * [Databases](databases/README.md)
-  * [Overview](databases/overview.md)
+  * [Database Families](databases/families.md)
   * [In-memory Databases](databases/in-memory-databases/README.md)
     * [Concurrency Control](databases/in-memory-databases/concurrency-control.md)
