@@ -42,7 +42,7 @@ and consist of a single node.
 However, a system may choose to provide different guarantees in presence of partitions and
 otherwise. It would then make sense to describe systems by a pair of property sets, such as:
 - CA/CP: a system provides both consistency and availability when the network is fully operational,
-  but under a partition it drops availability and may rejects requests to preserve consistency.
+  but under a partition it drops availability and may reject requests to preserve consistency.
 - CA/AP: a system provides both consistency and availability when the network is fully operational,
   but under a partition it still serves all requests while not preserving consistency.
 - A/AP: a system that never tries to provide consistency, even when not under a partition.
