@@ -22,7 +22,7 @@ asynchronously.
 ## Data organization
 
 Instead of finding records by special ids, database systems can in some cases store direct pointers
-to whenever targer records are stored in memory, removing a level of indirection. It's also easier
+to wherever targer records are stored in memory, removing a level of indirection. It's also easier
 to have separate memory pools for fixed-length columns and variable-length columns of different
 sizes.
 
