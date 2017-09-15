@@ -7,4 +7,4 @@
 * [Databases](databases/README.md)
   * [Database Families](databases/families.md)
   * [In-memory Databases](databases/in-memory-databases/README.md)
-    * [Concurrency Control](databases/in-memory-databases/concurrency-control.md)
+    * [Concurrency Control](databases/in-memory-databases/cc1-concurrency-control.md)
