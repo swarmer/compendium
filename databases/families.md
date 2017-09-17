@@ -36,6 +36,15 @@ A loose movement of databases deciding to forgo the relational model, SQL and AC
 more easily achieve high performance and scalability by sharding. Another common characteristic
 is lack of schemas.
 
+### Time Series Databases
+A distinct family of databases, that all tend to be non-relational, designed specifically to
+ingest and store a massive number of data points with a time component. The end purpose is to
+answer analytical queries on these temporally ordered data points.
+
+Because of the typical amount and nature of data (billions of points per day), compression becomes
+very important. On the other hand, updates to already ingested data and transactional workloads
+are rare and so their performance is not prioritized.
+
 
 ## NewSQL
 
