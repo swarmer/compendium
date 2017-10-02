@@ -1,6 +1,6 @@
 # In-memory Databases
 
-Notes about implementation of efficient in-memory databases running on multi-core systems.
+Notes about implementation details of efficient in-memory databases running on multi-core systems.
 
 
 ## Overview
