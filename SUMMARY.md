@@ -8,3 +8,5 @@
 * [Parallel and Distributed Computing](parallel-and-distributed-computing/README.md)
   * [Consistency Models](parallel-and-distributed-computing/consistency-models.md)
   * [CAP Theorem](parallel-and-distributed-computing/cap.md)
+* [Python](python/README.md)
+  * [Packaging](python/packaging.md)
