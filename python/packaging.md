@@ -60,7 +60,7 @@ Below is a non-exclusive list of their projects.
 - warehouse  
     The next version of package repository software that will in future replace the
     code that's currently powering PyPI.
-- distlib
+- distlib  
     A new collection of lower-level utilities to be used by the packaging ecosystem.
     Among other things, contains implementations of some of the newer PEPs related to packaging,
     package introspection utilities and tools for accessing package indexes like PyPI.
