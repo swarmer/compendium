@@ -98,16 +98,49 @@ Assumptions:
 
 ## Difference between paired samples
 
-- TODO
-- Dependent t-test for paired samples
-- Wilcoxon signed-rank test
+### Dependent t-test for paired samples
+
+Null hypothesis: two means are equal.
+This test is not robust to outliers.
+
+Assumptions:
+- Dependent variable is continuous.
+- Dependent variable is approximately normally distributed.
+- Observations are independent.
 
 
-## Repeated measures ANOVA
+### Wilcoxon signed-rank test
 
-- TODO
-- Fisher
-- Friedman test
+A non-parametric test for paired sample difference.
+
+Null hypothesis: two means are equal.
+
+Assumptions:
+- Observations are selected randomly and are independent.
+- Dependent variable is continuous.
+
+
+## Repeated measures ANOVA (rANOVA)
+
+### F-test
+
+Null hypothesis: several populations have the same mean.
+
+Assumptions:
+- Dependent variables are normally distributed.
+- Sphericity - differences scores must have the same variance when comparing any two levels of
+    within-subjects factor.
+- Subjects are selected randomly and are independent from each other.
+
+
+### Friedman test
+
+A non-parametric test that is robust to non-normality and outliers.
+
+Null hypothesis: several populations have the same mean.
+
+Assumptions:
+- Data is ordinal or numeric.
 
 
 ## Multiple comparisons tests and corrections
@@ -121,4 +154,10 @@ For unequal variances and sample sizes:
 - Tamhane's T2 test
 - Dunnett's T3 test
 - Games-Howell test
+
+
+## Distribution tests
+
+- Kolmogorov–Smirnov: for any distribution
+- Shapiro–Wilk: test for normality
   
