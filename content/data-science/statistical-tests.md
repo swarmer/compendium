@@ -1,4 +1,8 @@
-# Statistical tests
++++
+title = "Statistical tests"
+weight = 1
+sort_by = "weight"
++++
 
 
 ## Difference between samples

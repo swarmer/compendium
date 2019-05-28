@@ -1,4 +1,9 @@
-# CAP Theorem
++++
+title = "CAP Theorem"
+weight = 1
+sort_by = "weight"
++++
+
 
 CAP theorem states at any given moment a distributed system can satisfy no more than 2 out of 3
 requirements:

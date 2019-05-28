@@ -1,4 +1,9 @@
-# In-memory Databases
++++
+title = "In-memory Databases"
+weight = 1
+sort_by = "weight"
++++
+
 
 Notes about implementation details of efficient in-memory databases running on multi-core systems.
 

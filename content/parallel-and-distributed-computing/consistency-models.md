@@ -1,4 +1,9 @@
-# Consistency Models
++++
+title = "Consistency Models"
+weight = 2
+sort_by = "weight"
++++
+
 
 _Disclaimer: this is compiled on a best effort basis from a lot of confusing, incomplete and sometimes mutually exclusive sources, so correctness is not guaranteed._
 
@@ -15,7 +20,7 @@ Often a set of parallel processes forms a high level abstraction, such as a data
 A **consistency model** is a set of rules that precisely describe allowed results of series of operations performed on such distributed system in parallel.
 
 
-## Single-object, single-operation models
+## Single-object, single-operation models
 
 These models only describe rules concerning series of singular ungrouped operations on singular ungrouped objects. An object can be a location in memory, a more complex structure such as a queue, or even something larger.
 
@@ -40,27 +45,27 @@ Sequential consistency drops the requirement that an operation takes effect betw
 It's still required that all processes (eventually) see  operations performed in a single order in which operations performed by a particular process are not reordered between each other.
 
 
-### Causal Consistency
+### Causal Consistency
 
 Instead of sequential consistency's requirement that the order of *all* operations by a process is preserved, we can only require that the order of *causally related* operations is preserved. Causal relations can be defined in different ways and these relation can be explicitly specified when invoking them.
 
 
-### Eventual Consistency
+### Eventual Consistency
 
 A weak model specifying that in absence of updates to an object, all nodes will converge to the same state and all reads on this object will return the latest written value.
 
 
-## Multi-object, Multi-operation Models
+## Multi-object, Multi-operation Models
 
 These models come from databases background and include a concept of transaction containing multiple operations on a number of objects.
 
 
-### Strict Serializability
+### Strict Serializability
 
 A version of serializability that additionally guarantees that their execution is as if the transactions' order in real time was preserved.
 
 
-### Serializability
+### Serializability
 
 A guarantee that a result of execution of several transactions' operations could have been produced by executing these transactions one at a time, one after another in some arbitrary order.
 
@@ -70,12 +75,12 @@ A guarantee that a result of execution of several transactions' operations could
 After a transaction has read certain rows, on subsequent reads these rows will not be changed, even if another transaction changed them and committed. Phantom reads — reads returning a changed set of rows that satisfy a search confition are allowed according to the SQL standard.
 
 
-### Read Committed
+### Read Committed
 
 A transaction will never read uncommitted data, but it may re-read data previously read and get changed rows, updated by other recently committed transactions.
 
 
-### Read Uncommitted
+### Read Uncommitted
 
 A transaction will see all updates, even not yet committed.
 

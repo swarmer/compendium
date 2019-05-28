@@ -1,4 +1,9 @@
-# Python packaging
++++
+title = "Python packaging"
+weight = 1
+sort_by = "weight"
++++
+
 
 The ecosystem related to building, downloading, installing and managing
 Python packages has had a long rocky history and is still actively evolving. Here's a
